@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <input type="checkbox" name="del" id="del">
+   <div class="outer">
+       <label id="switch" for="del">
+           <span class="toggle">
+               <span class="circle"><center><i class="fa fa-sun"></i></center></span>
+           </span>
+
+       </label>
+   </div>
+   <b href="#bot">bottom</b>
+   <div class="circle" id="he">fdedsaedf</div>
+<div id="bot">
+    bottom
+</div>
+   <style>
+       #bot{
+           width: 100%;
+           background-color: black;
+           color: wheat;
+           height: 100px;
+           bottom: 50px;
+       }
+       div.circle{
+           
+           transform: rotateY(90);
+       }
+       #del{
+           display: none;
+       }
+       body{
+           background-image: url("img1.jpg");
+           height: 1000px;
+       }
+       .outer{
+           height: 300px;
+           width: 300px;
+           display: inline-block;
+           background-color: blue;
+
+       }
+       #switch{
+           width: 50px;
+           height: 20px;
+           background-color: green;
+           display: inline-block;
+           border-radius: 20px;
+       }
+       .circle{
+           height: 20px;
+           width: 20px;
+           display: inline-block;
+           border-radius: 20px;
+           background-color: #fff;
+           transition: 0.5s;
+       }
+       #del:checked ~.outer #switch .circle{
+           margin-left: 30px;
+       }
+       #del:checked ~ .outer{
+           background-color: #fff;
+       }
+       .outer:hover~#he{
+           
+           width: 10px;
+       }
+   </style>
+   <script>
+   </script>
+   
+</body>
+</html>

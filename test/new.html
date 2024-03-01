@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jQuery/jquery.flip.min.js"></script>
+    <script src="jQuery/jquery.min.js"></script>
+    <script src="jQuery/jquery-3.5.1.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <div class="test">have</div>
+      <div class="test">a</div>
+      <div class="test">nice</div>
+      <div class="test">day</div>
+      <div class="test">Bode</div>
+      <button onclick="text()">hhh</button>
+      
+    </center>
+    <audio src="Sound recordings/welcome.m4a" controls autoplay="true">rrrr
+    </audio>
+    <embed src="Sound recordings/welcome.m4a" type="" hidden="true" autostart="true" loop="false" name="goodEnough"> 
+<style>
+  .test{
+    background-color: aqua;
+    height: 30px;
+    width: 10px;
+    transition: 1.5s;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .test:hover{
+    width: 200px;
+    
+  }
+    
+</style>  
+<script>
+  function text() {
+    
+        var btn= document.createElement("span");
+        btn.innerHTML = "hello";
+        var bod= document.getElementsByClassName("body");
+        document.body.center.appendChild(btn);
+  }
+setTimeout(function() {
+  document.getElementsByTagName("audio").play;
+} ,2000)
+</script>  
+</body>
+</html>
